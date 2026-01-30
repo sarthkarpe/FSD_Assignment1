@@ -1,8 +1,195 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>First Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sarth Karpe | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #1f2933;
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 40px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 50px 20px;
+        }
+
+        h2 {
+            font-size: 26px;
+            margin-bottom: 20px;
+            color: #1f2933;
+            border-left: 5px solid #3b82f6;
+            padding-left: 10px;
+        }
+
+        .about p {
+            font-size: 17px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        .contact a {
+            color: #3b82f6;
+            text-decoration: none;
+        }
+
+        footer {
+            background: #1f2933;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+
+        @media(max-width: 600px) {
+            header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<h1>Hello World</h1>
+
+<header>
+    <h1>Sarth Karpe</h1>
+    <p>Computer Science Engineering Student</p>
+</header>
+
+<section class="about">
+    <h2>Profile</h2>
+    <p>
+        Motivated and tech-savvy Computer Science Engineering student with a strong foundation in
+        software development, cloud technologies, and data management. Passionate about leveraging
+        programming skills to develop efficient solutions and enhance digital experiences.
+        A quick learner who enjoys collaborating on innovative projects.
+    </p>
+</section>
+
+<section>
+    <h2>Education</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Diploma in Computer Science & Engineering</h3>
+            <p><strong>MIT-WPU University</strong></p>
+            <p>2021 – 2024</p>
+        </div>
+        <div class="card">
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <p><strong>MIT-WPU University</strong></p>
+            <p>2024 – 2027</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Work Experience</h2>
+    <div class="card">
+        <h3>Social Media Manager (Internship)</h3>
+        <p><strong>Paradox Company | Pune</strong></p>
+        <p>2024</p>
+        <ul>
+            <li>• Managed and grew company social media accounts across multiple platforms</li>
+            <li>• Created engaging content to increase user engagement and online visibility</li>
+            <li>• Analyzed engagement data and optimized posting strategies</li>
+            <li>• Collaborated with design and marketing teams for digital campaigns</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="grid">
+        <div class="card">
+            <ul>
+                <li>Python</li>
+                <li>Swift</li>
+                <li>AWS</li>
+            </ul>
+        </div>
+        <div class="card">
+            <ul>
+                <li>CSS</li>
+                <li>C</li>
+                <li>MySQL</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Languages</h2>
+    <div class="card">
+        <ul>
+            <li>English</li>
+            <li>Hindi</li>
+            <li>Marathi</li>
+        </ul>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>📞 +91 9834599351</p>
+        <p>📧 <a href="mailto:sarth919@gmail.com">sarth919@gmail.com</a></p>
+        <p>📍 India, Pune</p>
+        <p>🔗 <a href="https://www.linkedin.com/in/sarth-karpe-b335b826b/" target="_blank">LinkedIn Profile</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Sarth Karpe | Portfolio Website
+</footer>
+
 </body>
 </html>
