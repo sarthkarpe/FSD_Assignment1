@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", function (event) {
 
-        event.preventDefault(); // Prevent page refresh
+        event.preventDefault(); 
 
         let email = emailInput.value.trim();
         let password = passwordInput.value.trim();
@@ -16,10 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
         error.innerText = "";
         error.style.color = "red";
 
-        // Email validation pattern
         let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        // 1️⃣ Check if email is empty
+        
         if (email === "") {
             error.innerText = "Email is required.";
             return;
@@ -31,29 +30,26 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // 3️⃣ Check if password is empty
         if (password === "") {
             error.innerText = "Password is required.";
             return;
         }
 
-        // 4️⃣ Password length check
+       
         if (password.length < 6) {
             error.innerText = "Password must be at least 6 characters.";
             return;
         }
 
-        // 5️⃣ Password must contain at least one number
         if (!/\d/.test(password)) {
             error.innerText = "Password must contain at least one number.";
             return;
         }
 
-        // If all validations pass
         error.style.color = "green";
         error.innerText = "Login Successful!";
 
-        // AJAX Example using fetch()
+        
         fetch("https://jsonplaceholder.typicode.com/posts", {
             method: "POST",
             headers: {
